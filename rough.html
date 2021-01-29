@@ -1,0 +1,30 @@
+
+<script>
+
+//part1
+
+const loginBtn=document.getElementById("login");
+        loginBtn.addEventListener('click',function(){
+            const loginArea=document.getElementById('login-area');
+            loginArea.style.display='none';
+            const transactuinArea=document.getElementById('transaction-area');
+            transactuinArea.style.display="block";
+
+//part2
+    
+const currentDeposit=document.getElementById('currentDeposit').innerText;
+const currentDepositNumber=parseFloat(currentDeposit);
+const totalDeposit=depositNumber+currentDepositNumber;
+
+document.getElementById('currentDeposit').innerText=totalDeposit;
+
+const currentBlance=document.getElementById("currentBlance").innerText;
+const currentBlanceNumber=parseFloat(currentBlance);
+const totalBlance=depositNumber+currentBlanceNumber;
+document.getElementById('currentBlance').innerText=totalBlance;
+
+document.getElementById('depositAmount').value="";
+
+
+
+</script>
